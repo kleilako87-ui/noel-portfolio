@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noel's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="overlay" id="loadingOverlay">
+    <div class="loader">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="loader__label">Initializing...</div>
+  </div>
+
+  <canvas id="bgCanvas" class="canvas-bg"></canvas>
+  <div class="page" id="page">
+    <header class="site-header">
+      <div class="glass-frame" id="welcomeFrame">
+        <h1 class="title">Hello and Welcome To Noel's Portfolio!</h1>
+        <p class="subtitle">Click below if you're interested in me as a :</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="button-grid">
+        <button class="panel-button" id="robloxButton" data-link="roblox.html" aria-label="Go to Roblox section">
+          <div class="button-icon">🎮</div>
+          <div class="button-label">Roblox Scripter</div>
+        </button>
+        <button class="panel-button" id="webDevButton" aria-label="Web development coming soon">
+          <div class="button-icon">&lt;/&gt;</div>
+          <div class="button-label">Web Developer</div>
+        </button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="contact-section">
+        <p class="contact-text">Contact me in</p>
+        <div class="arrows">↓ ↓</div>
+        <div class="contact-buttons">
+          <a href="discord://users/noel.frr" target="_blank" class="contact-button" aria-label="Add me on Discord">
+            <div class="button-icon">💬</div>
+            <div class="button-label">Discord: noel.frr</div>
+          </a>
+          <a href="https://www.roblox.com/users/5242607/profile" target="_blank" class="contact-button" aria-label="View my Roblox profile">
+            <div class="button-icon">🎮</div>
+            <div class="button-label">Roblox</div>
+          </a>
+        </div>
+      </div>
+      <div class="hint">Hey bro! I made this website my self to show my Web Development skills. Consider me!</div>
+    </footer>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Under development notice">
+      <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+      <h2>It's under development</h2>
+      <p>New features are coming soon. For now, roam around and enjoy my cool website</p>
+    </div>
+  </div>
+
+  <div class="secret" id="secretPanel" role="status" aria-live="polite">
+    <div class="secret__content">
+      <h3>🎉 Secret Unlocked!</h3>
+      <p>You've found the hidden easter egg. Keep exploring.</p>
+      <button class="secret__close" id="secretClose">Close</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
